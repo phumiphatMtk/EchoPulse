@@ -23,9 +23,11 @@ export default function Home() {
             <CardComponent />
 
             {/* components */}
+            {/* Deposit */}
             <div className="flex">
-
             </div>
+            {/* Withdraw money */}
+            <div className="flex"></div>
           </div>
         </div>
       </div>
