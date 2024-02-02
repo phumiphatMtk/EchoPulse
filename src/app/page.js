@@ -21,6 +21,8 @@ export default function Home() {
             <button onClick={handleActive}>Active menu</button>
             {menuActive && <UserHeaderComponent />}
             <CardComponent />
+
+            {/* components */}
           </div>
         </div>
       </div>
