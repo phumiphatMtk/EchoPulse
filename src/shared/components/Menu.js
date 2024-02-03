@@ -3,14 +3,15 @@ import { componentsState } from "../stores";
 const Menu = () => {
   const { setMenuActive, setCpName } = componentsState();
   const handleMeunuState = (active, menu) => { 
+    console.log(active, menu);
     setMenuActive(active);
     setCpName(menu);
   }
   return (
     <div>
-      <div class="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         <div>
-          <button onClick={() => handleMeunuState(true, "withdraw")}>Withdraw</button>
+          <button onClick={() => handleMeunuState(true, 'withdraw')}>Withdraw</button>
         </div>
         <div>
           <button>Deposit</button>
