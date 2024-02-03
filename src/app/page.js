@@ -20,7 +20,7 @@ export default function Home() {
           <div className="shadow-md w-2/4 p-3 rounded-3xl">
             <UserHeaderComponent />
             <CardComponent />
-
+            <div className="ml-30">asdasdasd</div>
             {/* components */}
           </div>
         </div>
