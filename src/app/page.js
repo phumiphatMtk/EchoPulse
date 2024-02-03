@@ -3,7 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import ezslot from "@/assets/images/ez-slot-cover-foreground.png";
-import { CardComponent, UserHeaderComponent } from "@/shared/components";
+import {
+  CardComponent,
+  UserHeaderComponent,
+  MenuComponent,
+} from "@/shared/components";
 import { componentsState } from "@/shared/stores";
 
 export default function Home() {
@@ -20,7 +24,9 @@ export default function Home() {
           <div className="shadow-md w-2/4 p-3 rounded-3xl">
             <UserHeaderComponent />
             <CardComponent />
-            <div className="ml-30">asdasdasd</div>
+            <MenuComponent />
+       
+            <button>back</button>
             {/* components */}
           </div>
         </div>
