@@ -7,6 +7,7 @@ import {
   CardComponent,
   UserHeaderComponent,
   MenuComponent,
+  WithdrawComponent
 } from "@/shared/components";
 import { componentsState } from "@/shared/stores";
 
@@ -25,9 +26,10 @@ export default function Home() {
             <UserHeaderComponent />
             <CardComponent />
             <MenuComponent />
-       
+            
             <button>back</button>
             {/* components */}
+            <WithdrawComponent />
           </div>
         </div>
       </div>
