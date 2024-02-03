@@ -17,9 +17,8 @@ export default function Home() {
     <main className="relative bg-gradient-to-b from-purple-600 via-indigo-700 to-purple-900 bg-cover bg-center h-screen">
       <div className="container mx-auto py-5">
         <div className="flex justify-center items-center ">
-          <div className="shadow-md w-2/4 p-3">
-            <button onClick={handleActive}>Active menu</button>
-            {menuActive && <UserHeaderComponent />}
+          <div className="shadow-md w-2/4 p-3 rounded-3xl">
+            <UserHeaderComponent />
             <CardComponent />
 
             {/* components */}
