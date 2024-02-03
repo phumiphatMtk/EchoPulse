@@ -1,12 +1,14 @@
-import React from "react";
+"use client";
 
-export default function UserHeader() {
+import React from "react";
+import Image from "next/image";
+import logo from "@/assets/images/logo.png";
+
+const UserHeader = () => {
   return (
-    <div>
-      <div className="flex-row">
-        <div>asd</div>
-        <div>asd</div>
-      </div>
-    </div>
+    <div className="px-16">TEST user header</div>
   );
-}
+
+};
+
+export default UserHeader;
