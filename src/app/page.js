@@ -18,16 +18,20 @@ export default function Home() {
       <div className="container mx-auto py-5">
         <div className="flex justify-center items-center ">
           <div className="shadow-md w-2/4 p-3">
-            <button onClick={handleActive}>Active menu</button>
-            {menuActive && <UserHeaderComponent />}
-            <CardComponent />
 
-            {/* components */}
-            {/* Deposit */}
-            <div className="flex">
+              {/* components */}
+            <div className="menucontain">
+              <button
+                className="text-white text-2xl mb-1 bg-gradient-to-r from-yellow-500 to-yellow-800 hover:from-yellow-300 hover:to-yellow-600 rounded-full w-16 h-16 pl-1 pt-7 cursor-pointer shadow-outline-yellow"
+                onClick={handleActive}
+              >
+                +
+              </button>
+              {menuActive && <UserHeaderComponent />}
+              <CardComponent />
+                {/* Deposit */}
+                {/* Withdraw money */}
             </div>
-            {/* Withdraw money */}
-            <div className="flex"></div>
           </div>
         </div>
       </div>
