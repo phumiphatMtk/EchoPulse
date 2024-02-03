@@ -8,6 +8,13 @@ import {
   UserHeaderComponent,
   MenuComponent,
   WithdrawComponent,
+  DepositComponent,
+  PromotionComponent,
+  ActivityComponent,
+  ResetPasswordComponent,
+  RecordComponent,
+  PlayGameComponent,
+  AccountComponent,
 } from "@/shared/components";
 import { componentsState } from "@/shared/stores";
 
@@ -26,10 +33,24 @@ export default function Home() {
             <UserHeaderComponent />
             <CardComponent />
             {!menuActive && <MenuComponent />}
-
             {menuActive && <button onClick={handleActive}>back</button>}
             {/* components */}
+            {/* Withdraw */}
             {menuActive && cpName == "withdraw" && <WithdrawComponent />}
+            {/* Deposit */}
+            {menuActive && cpName == "deposit" && <DepositComponent />}
+            {/* Promotion */}
+            {menuActive && cpName == "promotion" && <PromotionComponent />}
+            {/* Activity */}
+            {menuActive && cpName == "activity" && <ActivityComponent />}
+            {/* ResetPassword */}
+            {menuActive && cpName == "resetpassword" && <ResetPasswordComponent />}
+            {/* Record */}
+            {menuActive && cpName == "record" && <RecordComponent />}
+            {/* PlayGame */}
+            {menuActive && cpName == "playgame" && <PlayGameComponent />}
+            {/* Account */}
+            {menuActive && cpName == "account" && <AccountComponent />}
           </div>
         </div>
       </div>

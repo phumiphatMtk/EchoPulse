@@ -14,7 +14,25 @@ const Menu = () => {
           <button onClick={() => handleMeunuState(true, 'withdraw')}>Withdraw</button>
         </div>
         <div>
-          <button>Deposit</button>
+          <button onClick={() => handleMeunuState(true, 'deposit')}>Deposit</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'promotion')}>Promotion</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'activity')}>Activity</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'resetpassword')}>ResetPassword</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'record')}>Record</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'playgame')}>PlayGame</button>
+        </div>
+        <div>
+          <button onClick={() => handleMeunuState(true, 'account')}>Account</button>
         </div>
       </div>
     </div>
