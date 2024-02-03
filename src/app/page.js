@@ -35,16 +35,18 @@ export default function Home() {
             {!menuActive && <MenuComponent />}
             {menuActive && <button onClick={handleActive}>back</button>}
             {/* components */}
-            {/* Withdraw */}
-            {menuActive && cpName == "withdraw" && <WithdrawComponent />}
             {/* Deposit */}
             {menuActive && cpName == "deposit" && <DepositComponent />}
+            {/* Withdraw */}
+            {menuActive && cpName == "withdraw" && <WithdrawComponent />}
             {/* Promotion */}
             {menuActive && cpName == "promotion" && <PromotionComponent />}
             {/* Activity */}
             {menuActive && cpName == "activity" && <ActivityComponent />}
             {/* ResetPassword */}
-            {menuActive && cpName == "resetpassword" && <ResetPasswordComponent />}
+            {menuActive && cpName == "resetpassword" && (
+              <ResetPasswordComponent />
+            )}
             {/* Record */}
             {menuActive && cpName == "record" && <RecordComponent />}
             {/* PlayGame */}
