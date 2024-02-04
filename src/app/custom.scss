@@ -1,0 +1,42 @@
+@keyframes worldfloat {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+
+@keyframes x-bg-2 {
+  0%,
+  100% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+}
+
+.wordanimation {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  top: 40px;
+  opacity: 0.2;
+  -webkit-animation: worldfloat 10s ease 0s infinite normal none;
+  animation: worldfloat 10s ease 0s infinite normal none;
+}
+
+.-bg-2 {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  margin-top: 150px;
+  margin-left: -50px;
+  width: 30%;
+  -webkit-animation: x-bg-2 8s ease infinite;
+  animation: x-bg-2 8s ease infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}

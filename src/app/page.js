@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import ezslot from "@/assets/images/ez-slot-cover-foreground.png";
+import world4 from "@/assets/images/world4.png";
+import bgallcasino from "@/assets/images/bg-allcasino-2.png";
 import {
   CardComponent,
   UserHeaderComponent,
@@ -44,7 +46,9 @@ export default function Home() {
             {/* Activity */}
             {menuActive && cpName == "activity" && <ActivityComponent />}
             {/* ResetPassword */}
-            {menuActive && cpName == "resetpassword" && <ResetPasswordComponent />}
+            {menuActive && cpName == "resetpassword" && (
+              <ResetPasswordComponent />
+            )}
             {/* Record */}
             {menuActive && cpName == "record" && <RecordComponent />}
             {/* PlayGame */}
@@ -54,12 +58,30 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* image bottom */}
+      {/* image absolute */}
       <div className="absolute bottom-0 w-full z-10">
         <Image
           className="w-full"
           src={ezslot.src}
           alt="ez-slot"
+          width={600}
+          height={400}
+        />
+      </div>
+      <div className="-bg-2">
+        <Image
+          className="w-full"
+          src={bgallcasino.src}
+          alt="x-bg-2"
+          width={600}
+          height={400}
+        />
+      </div>
+      <div className="wordanimation">
+        <Image
+          className="w-full"
+          src={world4.src}
+          alt="world4"
           width={600}
           height={400}
         />
