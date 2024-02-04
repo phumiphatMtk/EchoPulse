@@ -16,7 +16,9 @@ const AccordionItem = ({ title, children, index }) => {
       <button
         onClick={toggleAccordion}
         style={{ cursor: "pointer" }}
-        className="bg-gradient-to-br from-yellow-300 to-brown-800 p-4 my-2  flex justify-between w-full rounded-md"
+        className="bg-gradient-to-r from-yellow-300 to-yellow-700
+        p-5 my-2  flex justify-between w-full rounded-md shadow-md transition duration-400
+        "
       >
         <div>{title}</div>
         {/* {isOpen ? <span>-</span> : <span>+</span>} */}
