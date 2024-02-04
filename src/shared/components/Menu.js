@@ -8,7 +8,7 @@ const Menu = () => {
   };
   return (
     <div>
-      <div class="grid grid-cols-4 gap-4 justify-items-center">
+      <div className="grid grid-cols-4 gap-4 justify-items-center">
         <div>
           <button onClick={() => handleMeunuState(true, "deposit")}>
             Deposit
