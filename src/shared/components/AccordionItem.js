@@ -16,10 +16,35 @@ const AccordionItem = ({ title, children, index }) => {
       <button
         onClick={toggleAccordion}
         style={{ cursor: "pointer" }}
-        className="bg-gradient-to-br from-yellow-300 to-brown-800 p-4 my-2  flex justify-between w-full"
+        className="bg-gradient-to-br from-yellow-300 to-brown-800 p-4 my-2  flex justify-between w-full rounded-md"
       >
         <div>{title}</div>
-        {isOpen ? <span>-</span> : <span>+</span>}
+        {/* {isOpen ? <span>-</span> : <span>+</span>} */}
+        <svg
+          className="fill-white shrink-0 ml-8"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`transform origin-center transition duration-200 ease-out ${
+              isOpen && "!rotate-180"
+            }`}
+          />
+          <rect
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+              isOpen && "!rotate-180"
+            }`}
+          />
+        </svg>
       </button>
       <Collapse isOpened={isOpen}>
         <div>{children}</div>
