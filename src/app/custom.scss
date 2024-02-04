@@ -40,3 +40,56 @@
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
+
+.accordion {
+  background: linear-gradient(170deg, #fee37b 0%,#925a06 100%);
+  color: white;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 100%;
+  padding: 0px 20px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0px #8989d5;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion:active {
+  background: linear-gradient(170deg, #fff1ba 0%, #925a06 100%);
+  color: white;
+  box-shadow: 0 0 3px 2px #dec387;
+  transition-delay: 0.1s; 
+}
+
+.bgback {
+  background: linear-gradient(155deg, #c684ff82, #6500ff73);
+    // max-width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px auto;
+    box-shadow: 0 0 0 3px #ae51ff;
+    color: white;
+    
+}
+
+.wdsec02 {
+  width: 100%;
+  // max-width: 500px;
+  margin: 0 auto;
+  // font-size: 20px; 
+  padding: 20px;
+  border-radius: 15px;
+  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  -moz-box-shadow: 0 0 0 1px #a99871;
+  box-shadow: 0 0 3px 2px #f1f6fa;
+}
+
+.btn-wit {
+  background: linear-gradient(170deg, #fee37b 0%,#925a06 100%);;
+}
