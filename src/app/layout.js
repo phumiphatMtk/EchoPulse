@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./custom.scss";
-
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/assets/fontawesome/css/fontawesome.min.css";
+import "@/assets/fontawesome/css/all.min.css";
+import Image from "next/image";
+import ezslot from "@/assets/images/ez-slot-cover-foreground.png";
+import world4 from "@/assets/images/world4.png";
+import bgallcasino from "@/assets/images/bg-allcasino-2.png";
+import covergift from "@/assets/images/ez-slot-ic-cover-gift.png";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +16,48 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`relative bg-gradient-to-b from-purple-600 via-indigo-700 to-purple-900 bg-cover bg-center`}
+      >
+        {children}
+
+        <div className="w-full z-10">
+          <Image
+            className="w-full"
+            src={ezslot.src}
+            alt="ez-slot"
+            width={600}
+            height={400}
+          />
+        </div>
+        <div className="-bg-2">
+          <Image
+            className="w-full"
+            src={bgallcasino.src}
+            alt="x-bg-2"
+            width={600}
+            height={400}
+          />
+        </div>
+        <div className="wordanimation">
+          <Image
+            className="w-full"
+            src={world4.src}
+            alt="world4"
+            width={600}
+            height={400}
+          />
+        </div>
+        <div className="gift-absolute">
+          <Image
+            className="w-full"
+            src={covergift.src}
+            alt="covergift"
+            width={50}
+            height={50}
+          />
+        </div>
+      </body>
     </html>
   );
 }

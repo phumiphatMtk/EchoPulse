@@ -22,10 +22,17 @@
   position: absolute;
   width: 25%;
   right: 0;
-  top: 40px;
+  top: -5rem;
   opacity: 0.2;
   -webkit-animation: worldfloat 10s ease 0s infinite normal none;
   animation: worldfloat 10s ease 0s infinite normal none;
+}
+
+.gift-absolute {
+  position: absolute;
+  width: 10%;
+  left: 0;
+  bottom: 12rem;
 }
 
 .-bg-2 {
@@ -39,4 +46,14 @@
   animation: x-bg-2 8s ease infinite;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+
+.logoutbtn {
+  border-radius: 30px;
+  border: none;
+  padding: 3px 6px;
+  background: #d295ff;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
 }
