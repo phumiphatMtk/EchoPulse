@@ -32,7 +32,21 @@ export default function Home() {
             <UserHeaderComponent />
             <CardComponent />
             {!menuActive && <MenuComponent />}
-            {menuActive && <button onClick={handleActive}>back</button>}
+            {/* back btn */}
+            {menuActive && (
+              <div className="px-3 bg-[#f1f6fa] rounded-md text-[#404e67]">
+                <button onClick={handleActive}>
+                  <span className="text-[#404e67] text-2xl">
+                    <i className="fa-solid fa-house"></i>
+                  </span>
+                  &nbsp;
+                  <span className="text-[#c5c5c5] text-base">
+                    <i className="fa-solid fa-left-long"></i>
+                  </span>
+                  &nbsp; กลับหน้าหลัก
+                </button>
+              </div>
+            )}
             {/* components */}
             {/* Deposit */}
             {menuActive && cpName == "deposit" && <DepositComponent />}
