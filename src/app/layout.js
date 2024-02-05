@@ -16,12 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`relative bg-gradient-to-b from-purple-600 via-indigo-700 to-purple-900 bg-cover bg-center`}
-      >
+      <body className="relative bg-gradient-to-b from-purple-600 via-indigo-700 to-purple-900 bg-cover bg-center h-lvh">
         {children}
 
-        <div className="w-full z-10">
+        <div className="absolute  w-full z-10" style={{ bottom: "-15rem" }}>
           <Image
             className="w-full"
             src={ezslot.src}

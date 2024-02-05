@@ -25,10 +25,10 @@ export default function Home() {
     setCpName("home");
   };
   return (
-    <main className="h-full">
+    <main className="">
       <div className="container mx-auto py-5 relative z-30">
         <div className="flex justify-center items-center ">
-          <div className="shadow-xl w-2/4 p-3 rounded-3xl">
+          <div className="bg-[#868cf533] shadow-xl  p-3 rounded-3xl w-10/12 md:w-2/4">
             <UserHeaderComponent />
             <CardComponent />
             {!menuActive && <MenuComponent />}

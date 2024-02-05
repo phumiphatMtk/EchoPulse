@@ -8,7 +8,7 @@ import translate from "@/assets/images/translate.png";
 
 const UserHeader = () => {
   return (
-    <div className="px-16">
+    <div className="px-3 md:px-16">
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
           <div className="mr-3">
