@@ -23,7 +23,6 @@ const Promotion = () => {
       depth: 100,
       modifier: 2.5,
     },
-    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -53,7 +52,6 @@ const Promotion = () => {
           <div className="swiper-button-next slider-arrow">
             <i class="fa-solid fa-chevron-right"></i>
           </div>
-          <div className="swiper-pagination"></div>
         </div>
       </Swiper>
     </div>
