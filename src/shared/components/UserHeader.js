@@ -22,7 +22,7 @@ const UserHeader = () => {
           </div>
           <div>
             <div>
-              <i class="fa-solid fa-user"></i>&nbsp;ทดสอบ ทดสอบ
+              <i className="fa-solid fa-user"></i>&nbsp;ทดสอบ ทดสอบ
             </div>
             <div>
               <div className="inline-block mr-1" style={{ width: "15px" }}>
@@ -50,8 +50,11 @@ const UserHeader = () => {
               />
             </div>
             <div className="mr-1">
-              <button className="logoutbtn">
-                <i class="fa-solid fa-power-off"></i>
+              <button
+                className="bg-[#d295ff] p-1 rounded-full"
+                style={{ width: "32px" }}
+              >
+                <i className="fa-solid fa-power-off"></i>
               </button>
             </div>
           </div>

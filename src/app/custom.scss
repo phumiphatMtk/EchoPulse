@@ -50,7 +50,7 @@
 }
 
 .accordion {
-  background: linear-gradient(170deg, #fee37b 0%,#925a06 100%);
+  background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
   color: white;
   margin-bottom: 5px;
   height: 80px;
@@ -72,32 +72,40 @@
   background: linear-gradient(170deg, #fff1ba 0%, #925a06 100%);
   color: white;
   box-shadow: 0 0 3px 2px #dec387;
-  transition-delay: 0.1s; 
+  transition-delay: 0.1s;
 }
 
 .bgback {
   background: linear-gradient(155deg, #c684ff82, #6500ff73);
-    // max-width: 500px;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 5px auto;
-    box-shadow: 0 0 0 3px #ae51ff;
-    color: white;
-    
+  // max-width: 500px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px auto;
+  box-shadow: 0 0 0 3px #ae51ff;
+  color: white;
 }
 
 .wdsec02 {
   width: 100%;
   // max-width: 500px;
   margin: 0 auto;
-  // font-size: 20px; 
+  // font-size: 20px;
   padding: 20px;
   border-radius: 15px;
-  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #ddb0ff 0,
+    #b047ff 44%,
+    #652895 100%
+  );
   -moz-box-shadow: 0 0 0 1px #a99871;
   box-shadow: 0 0 3px 2px #f1f6fa;
 }
 
 .btn-wit {
-  background: linear-gradient(170deg, #fee37b 0%,#925a06 100%);;
+  background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
+}
+
+.btn-suggest {
+  background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
 }
