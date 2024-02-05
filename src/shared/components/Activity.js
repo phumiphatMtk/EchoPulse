@@ -36,7 +36,7 @@ const Activity = () => {
 
   return (
     <div className="headerprocess">
-      <h1 className="text-center text-3xl mb-3">
+      <h1 className="text-center text-3xl mt-3">
         <i className="fa-solid fa-calendar gtnbtn"></i>กิจกรรม
       </h1>
       <Swiper {...swiperOptions}>
