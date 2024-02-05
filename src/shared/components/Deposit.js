@@ -38,7 +38,7 @@ const Deposit = () => {
   return (
     <div className="tabcontent">
       <div className="headerprocess">
-        <h1 className="text-center text-3xl mb-3"> + ฝากเงิน</h1>
+        <h1 className="text-center text-3xl mb-3"> <i class="fa-solid fa-check checkbtn"></i> ฝากเงิน</h1>
         <div className="accordion-div">
           <div className="pdingaccord">
             <AccordionItem title="ธนาคาร" index={1}>

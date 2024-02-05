@@ -32,6 +32,7 @@ export default function Home() {
             <UserHeaderComponent />
             <CardComponent />
             {!menuActive && <MenuComponent />}
+<<<<<<< HEAD
             {/* back btn */}
             {menuActive && (
               <div className="px-3 bg-[#f1f6fa] rounded-md text-[#404e67]">
@@ -46,6 +47,13 @@ export default function Home() {
                   &nbsp; กลับหน้าหลัก
                 </button>
               </div>
+=======
+            {menuActive && (
+              <button onClick={handleActive}>
+                <i class="fas fa-home-lg-alt homebtn "></i>
+                <i class="fa-solid fa-arrow-left leftbtn"></i>
+              </button>
+>>>>>>> DevHell
             )}
             {/* components */}
             {/* Deposit */}
