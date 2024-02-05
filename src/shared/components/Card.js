@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import btnGift from "../../assets/images/playgame.gif";
 
 const Card = () => {
   return (
@@ -34,6 +36,15 @@ const Card = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-5 cursor-pointer">
+        <Image
+          className="w-56"
+          src={btnGift.src}
+          alt="logo"
+          width={15}
+          height={15}
+        />
       </div>
     </div>
   );
