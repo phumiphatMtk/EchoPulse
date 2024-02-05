@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className="relative bg-gradient-to-b from-purple-600 via-indigo-700 to-purple-900 bg-cover bg-center h-lvh">
         {children}
 
-        <div className="absolute  w-full z-10" style={{ bottom: "-15rem" }}>
+        <div className="absolute  w-full z-10 hidden md:block" style={{ bottom: "-15rem" }}>
           <Image
             className="w-full"
             src={ezslot.src}

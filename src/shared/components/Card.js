@@ -24,13 +24,13 @@ const Card = () => {
         </div>
         <div className="flex flex-row items-center justify-center mt-5">
           <div className="mr-3">
-            <button className="btn-suggest p-2 rounded-md w-48"> 
+            <button className="btn-suggest p-2 rounded-md md:w-48">
               <i className="fa-solid fa-user-plus"></i>&nbsp;แนะนำเพื่อน
             </button>
           </div>
           <div>
-            <button className="bg-[#462766] p-2 rounded-md w-48 hover:bg-transparent shadow-lg">
-            <i className="fa-solid fa-hands-bound"></i>&nbsp;คอมมิชชั่น
+            <button className="bg-[#462766] p-2 rounded-md md:w-48 hover:bg-transparent shadow-lg">
+              <i className="fa-solid fa-hands-bound"></i>&nbsp;คอมมิชชั่น
             </button>
           </div>
         </div>

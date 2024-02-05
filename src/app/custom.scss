@@ -109,3 +109,15 @@
 .btn-suggest {
   background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
 }
+
+@media (max-width: 576px) {
+  .wordanimation {
+    display: none;
+  }
+  .gift-absolute {
+    display: none;
+  }
+  .-bg-2  {
+    display: none;
+  }
+}
