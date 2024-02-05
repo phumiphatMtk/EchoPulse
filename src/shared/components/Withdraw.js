@@ -5,7 +5,10 @@ import kbankLogo from "@/assets/images/kbank.svg";
 const Withdraw = () => {
   return (
     <div className="headerprocess">
-      <h1 className="text-center text-3xl mb-3"> + ถอนเงิน</h1>
+      <h1 className="text-center text-3xl mb-3">
+        <i class="fa-solid fa-check checkbtn"></i>ถอนเงิน
+      </h1>
+
       <div className="bgback">
         <div class="flex justify-between">
           <div class=" text-black">
@@ -41,13 +44,18 @@ const Withdraw = () => {
         </div>
       </div>
       <div className="tablewd01 mt-10">
-        <span className="text-sm text-slate-500">จำนวนเงินที่ต้องการถอน</span>
-        <input type="text" className="w-full rounded-full p-2 pl-5 mt-3 focus:outline-none text-black shadow-md filter drop-shadow-md focus:bg-gray-200" placeholder="฿ 0.00" />
-
+        <span className="text-sm text-black">จำนวนเงินที่ต้องการถอน</span>
+        <input
+          type="text"
+          className="w-full rounded-full p-2 pl-5 mt-3 focus:outline-none text-black shadow-md filter drop-shadow-md focus:bg-gray-200"
+          placeholder="฿ 0.00"
+        />
       </div>
       <div className="confirmwithdraw my-5">
-        <div className="flex items-center justify-center"> 
-        <button className="btn-wit p-3 rounded-md text-sm w-40 ">ยืนยันการถอน</button>
+        <div className="flex items-center justify-center">
+          <button className="btn-wit p-3 rounded-md text-sm w-40 ">
+            ยืนยันการถอน
+          </button>
         </div>
       </div>
     </div>

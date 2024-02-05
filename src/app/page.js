@@ -32,7 +32,12 @@ export default function Home() {
             <UserHeaderComponent />
             <CardComponent />
             {!menuActive && <MenuComponent />}
-            {menuActive && <button onClick={handleActive}>back</button>}
+            {menuActive && (
+              <button onClick={handleActive}>
+                <i class="fas fa-home-lg-alt homebtn "></i>
+                <i class="fa-solid fa-arrow-left leftbtn"></i>
+              </button>
+            )}
             {/* components */}
             {/* Deposit */}
             {menuActive && cpName == "deposit" && <DepositComponent />}
