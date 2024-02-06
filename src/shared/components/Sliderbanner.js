@@ -3,6 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
+import banner1 from "../../assets/images/6.jpg";
 
 const Sliderbanner = () => {
   return (
@@ -16,12 +18,25 @@ const Sliderbanner = () => {
           slidesPerView={1}
         >
           <SwiperSlide>
-            {/* <Image src={banner1.src} alt="slide_image" /> */}
-            Slide 1
+            <div className="p-14">
+              <Image src={banner1} alt="slide_image" className="rounded-lg" />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <div className="p-14">
+              <Image src={banner1} alt="slide_image" className="rounded-lg" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="p-14">
+              <Image src={banner1} alt="slide_image" className="rounded-lg" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="p-14">
+              <Image src={banner1} alt="slide_image" className="rounded-lg" />
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
