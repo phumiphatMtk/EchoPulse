@@ -54,6 +54,7 @@ const Withdraw = () => {
       <div className="confirmwithdraw my-5">
         <div className="flex items-center justify-center">
           <button className="btn-wit p-3 rounded-md text-sm w-40 ">
+            <i className="fa-solid fa-arrow-right-to-bracket mr-1"></i>
             ยืนยันการถอน
           </button>
         </div>
