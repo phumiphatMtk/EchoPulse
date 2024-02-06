@@ -1,5 +1,4 @@
 @keyframes worldfloat {
-
   0%,
   100% {
     transform: translateY(-5%);
@@ -11,7 +10,6 @@
 }
 
 @keyframes x-bg-2 {
-
   0%,
   100% {
     transform: translateX(-5%);
@@ -114,18 +112,6 @@
   background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
 }
 
-@media (max-width: 576px) {
-  .wordanimation {
-    display: none;
-  }
-  .gift-absolute {
-    display: none;
-  }
-  .-bg-2  {
-    display: none;
-  }
-}
-
 .homebtn {
   font-size: 20px;
   margin-right: 5px;
@@ -150,66 +136,49 @@
   margin-right: 10px;
 }
 
-.swiper-container {
-}
-.swiper-slide img {
-  width: 100%; 
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 0 0 5px rgb(224 187 101), 0 0 0 10px rgb(68 68 134);
-}
-
-.swiper-slide.swiper-slide-active {
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 0 0 0 5px rgb(224 187 101), 0 0 0 10px rgb(68 68 134);
-  margin-top: 20px;
-  margin-bottom: 100px;
-}
-
-.swiper-pagination {
-  position: relative;
-  bottom: 1rem;
-}
-
-.slider-controler .slider-arrow {
-  background: #462766;
-  padding: 50px 10px;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 6px #e0ba65;
-  border-radius: 7px;
-  color: white;
-  z-index: 999;
-  border: none;
-  top: 30%;
-}
-.slider-controler .slider-arrow  {
-  font-size: 25px;
-  color: #ffffff;
-}
-
-.slider-controler .slider-arrow::after {
-  content: '';
-}
-@media (max-width: 512px) {
-  .slider-controler .slider-arrow {
-    margin-top: -14px;
-    padding: 20px 10px;
-    font-size: 20px;
+.promotion-swiper,
+.activity-swiper {
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 0 5px rgb(224 187 101), 0 0 0 10px rgb(68 68 134);
+    }
   }
-}
-.slider-controler .slider-arrow:hover {
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  .swiper-slide.swiper-slide-active {
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 0 5px rgb(224 187 101), 0 0 0 10px rgb(68 68 134);
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .swiper-pagination {
+    position: relative;
+    bottom: 1rem;
+  }
 
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: #6a59ff
+  .slider-controler {
+    .slider-arrow {
+      background: #462766;
+      padding: 50px 10px;
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0 6px #e0ba65;
+      border-radius: 7px;
+      color: white;
+      z-index: 999;
+      border: none;
+      top: 30%;
+    }
+    .slider-arrow {
+      font-size: 25px;
+      color: #ffffff;
+    }
+    .slider-arrow::after {
+      content: "";
+    }
+  }
 }
 
 .image-container {
@@ -229,34 +198,66 @@
   width: 80%;
   // margin: 0 auto;
   // margin-top: 20px;
-  background: linear-gradient(170deg, #fee37b 0%,#925a06 100%);
+  background: linear-gradient(170deg, #fee37b 0%, #925a06 100%);
   box-shadow: 0px 0px 0px 2px #e0bb65, 0px 0px 5px 1px black;
   font-weight: bold;
   outline: none;
-  transition: .4s;
+  transition: 0.4s;
   width: 100%;
   // width: 300px;
   display: none;
 }
 .image-button:hover {
-    color: white;
-    text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #e8c675, 0 0 20px #e8c675, 0 0 30px #e8c675;
+  color: white;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #e8c675, 0 0 20px #e8c675,
+    0 0 30px #e8c675;
 }
 .swiper-slide-active .image-button {
   display: block;
 }
 
-@media (max-width: 512px) {
+label {
+  color: white;
+  background: #7c30a1;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .wordanimation {
+    display: none;
+  }
+  .gift-absolute {
+    display: none;
+  }
+  .-bg-2 {
+    display: none;
+  }
   .image-button {
     font-size: 16px;
     padding: 8px;
     bottom: -60px;
-
   }
-}
-label {
-  color: white;
-    background: #7c30a1;
-    padding: 2px 15px;
-    border-radius: 10px;
+
+  .promotion-swiper {
+    .slider-controler {
+      .slider-arrow {
+        margin-top: -14px;
+        padding: 20px 10px;
+        font-size: 20px;
+      }
+      .slider-arrow:hover {
+        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px gold, 0 0 20px gold,
+          0 0 30px gold;
+      }
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+      filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+      background: #6a59ff;
+    }
+  }
 }

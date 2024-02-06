@@ -14,6 +14,7 @@ import {
   RecordComponent,
   PlayGameComponent,
   AccountComponent,
+  SliderbannerComponent,
 } from "@/shared/components";
 import { componentsState } from "@/shared/stores";
 
@@ -66,6 +67,7 @@ export default function Home() {
             {menuActive && cpName == "playgame" && <PlayGameComponent />}
             {/* Account */}
             {menuActive && cpName == "account" && <AccountComponent />}
+            {!menuActive && <SliderbannerComponent />}
           </div>
         </div>
       </div>

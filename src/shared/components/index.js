@@ -9,3 +9,4 @@ export { default as ResetPasswordComponent } from "./ResetPassword";
 export { default as RecordComponent } from "./Record";
 export { default as PlayGameComponent } from "./PlayGame";
 export { default as AccountComponent } from "./Account";
+export { default as SliderbannerComponent} from "./Sliderbanner";

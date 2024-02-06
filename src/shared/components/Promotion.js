@@ -29,7 +29,7 @@ const Promotion = () => {
       clickable: true,
     },
     modules: [EffectCoverflow, Pagination, Navigation],
-    className: "swiper-container",
+    className: "promotion-swiper",
   };
 
   const slideImages = [P1, P2, P3, P4];
