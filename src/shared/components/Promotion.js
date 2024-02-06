@@ -34,6 +34,11 @@ const Promotion = () => {
 
   const slideImages = [P1, P2, P3, P4];
 
+  const handleButtonClick = (index) => {
+    const url = "https://google.com";
+    window.location.href = url;
+  };
+
   return (
     <div className="headerprocess">
       <h1 className="text-center text-3xl mt-3">
@@ -42,7 +47,15 @@ const Promotion = () => {
       <Swiper {...swiperOptions}>
         {slideImages.map((image, index) => (
           <SwiperSlide key={index}>
-            <Image src={image} alt="slide_image" />
+            <div className="image-container">
+              <Image src={image} alt="slide_image" />
+              <button
+                className="image-button"
+                onClick={() => handleButtonClick(index)}
+              >
+                รับโบนัส
+              </button>
+            </div>
           </SwiperSlide>
         ))}
         <div className="slider-controler">

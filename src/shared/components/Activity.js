@@ -34,6 +34,12 @@ const Activity = () => {
 
   const slideImages = [A1, A2, A3, A4];
 
+  const handleButtonClick = (index) => {
+    const url = "https://google.com";
+    window.location.href = url;
+  };
+
+
   return (
     <div className="headerprocess">
       <h1 className="text-center text-3xl mt-3">
@@ -43,6 +49,12 @@ const Activity = () => {
         {slideImages.map((image, index) => (
           <SwiperSlide key={index}>
             <Image src={image} alt="slide_image" />
+            <button
+                className="image-button"
+                onClick={() => handleButtonClick(index)}
+              >
+                รับโบนัส
+              </button>
           </SwiperSlide>
         ))}
         <div className="slider-controler">
