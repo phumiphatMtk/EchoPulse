@@ -260,3 +260,51 @@ label {
     padding: 2px 15px;
     border-radius: 10px;
 }
+
+.headdeposit {
+  background: #ffffff73;
+  padding: 10px 0px;
+}
+.headwithdraw {
+  background: #dddddd57;
+  padding: 10px 0px;
+}
+.headdeposit.active button {
+  box-shadow: 0 0 0 2px #daaaff;
+}
+.headdeposit button {
+  background: linear-gradient(180deg,#d091ff,#9240d1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px 10px;
+  transition: .3s;
+}
+.headwithdraw button {
+  background: linear-gradient(180deg,#f27f7f,#b30000);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px 10px;
+  transition: .3s;
+}
+
+.historyofdps {
+  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 13px;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.statushistory span {
+  color: white;
+  font-size: 13px;
+  background: #c98e15;
+  padding: 0 5px;
+  border-radius: 3px;
+  border-top-left-radius: 10px;
+}
