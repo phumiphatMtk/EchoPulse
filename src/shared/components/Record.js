@@ -6,13 +6,34 @@ import truewallet from "@/assets/images/truewallet.svg";
 
 const Record = () => {
   const scbList = [
-    { src: scb, bankName: 'ธนาคารไทยพาณิชย์', accountNumber: '859-2-59209-0', status: 'รอดำเนินการ', amount: '250,000.00', date: '15/02/2021 05:50:34' },
-    { src: kbank, bankName: 'ธนาคารไทยพาณิชย์', accountNumber: '859-2-59209-0', status: 'สำเร็จ', amount: '250,000.00', date: '15/02/2021 05:50:34' },
-    { src: truewallet, bankName: 'ธนาคารไทยพาณิชย์', accountNumber: '859-2-59209-0', status: 'ไม่สำเร็จ', amount: '250,000.00', date: '15/02/2021 05:50:34' },
+    {
+      src: scb,
+      bankName: "ธนาคารไทยพาณิชย์",
+      accountNumber: "859-2-59209-0",
+      status: "รอดำเนินการ",
+      amount: "250,000.00",
+      date: "15/02/2021 05:50:34",
+    },
+    {
+      src: kbank,
+      bankName: "ธนาคารไทยพาณิชย์",
+      accountNumber: "859-2-59209-0",
+      status: "สำเร็จ",
+      amount: "250,000.00",
+      date: "15/02/2021 05:50:34",
+    },
+    {
+      src: truewallet,
+      bankName: "ธนาคารไทยพาณิชย์",
+      accountNumber: "859-2-59209-0",
+      status: "ไม่สำเร็จ",
+      amount: "250,000.00",
+      date: "15/02/2021 05:50:34",
+    },
   ];
-  
+
   return (
-    <div className="tabcontent" id="history">
+    <div className="tabcontent">
       <div className="headerprocess">
         <h1 className="text-center text-3xl my-3">
           <i className="fa-solid fa-clock-rotate-left checkbtn"></i>ถอนเงิน
@@ -53,43 +74,48 @@ const Record = () => {
             {scbList.map((item, index) => (
               <div className="historyofdps" key={index}>
                 <table width="100%">
-                  <tr>
-                    <td width="50%" className="pt-4">
-                      <table>
-                        <tr>
-                          <td className="pr-5">
-                            <Image
-                              className=""
-                              src={item.src}
-                              alt="scb"
-                              width={40}
-                            />
-                          </td>
-                          <td className="text-left leading-20">
-                            <span className="spanofbankhis">
-                              {item.bankName}
-                            </span>
-                            <br />
-                            <span className="spanofbankhis">
-                              {item.accountNumber}
-                            </span>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" className="text-right leading-20">
-                      <div className="statushistory">
-                        <span className="statushistory">{item.status}</span>
-                      </div>
-                      <span className="moneyhisdps">
-                        {" "}
-                        <i className="fa-solid fa-plus-circle plushis"></i>{" "}
-                        {item.amount} บาท
-                      </span>
-                      <br />
-                      <span className="text-xs">{item.date}</span>
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td width="50%" className="pt-4">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td className="pr-5">
+                                <Image
+                                  className="max-w-full h-auto"
+                                  src={item.src}
+                                  alt="scb"
+                                  width={40}
+                                  height={40}
+                                />
+                              </td>
+                              <td className="text-left leading-20 spanofbankhis-td">
+                                <span className="spanofbankhis">
+                                  {item.bankName}
+                                </span>
+                                <br />
+                                <span className="spanofbankhis">
+                                  {item.accountNumber}
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td width="50%" className="text-right leading-20">
+                        <div className="statushistory">
+                          <span className="statushistory">{item.status}</span>
+                        </div>
+                        <span className="moneyhisdps">
+                          {" "}
+                          <i className="fa-solid fa-plus-circle plushis"></i>{" "}
+                          {item.amount} บาท
+                        </span>
+                        <br />
+                        <span className="text-xs">{item.date}</span>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             ))}
