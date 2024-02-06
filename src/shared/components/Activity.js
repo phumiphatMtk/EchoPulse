@@ -29,7 +29,7 @@ const Activity = () => {
       clickable: true,
     },
     modules: [EffectCoverflow, Pagination, Navigation],
-    className: "swiper-container",
+    className: "activity-swiper",
   };
 
   const slideImages = [A1, A2, A3, A4];
