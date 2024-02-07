@@ -268,6 +268,13 @@ label {
     }
     
   }
+  .tabcontent {
+    padding-left: 3px;
+    padding-right: 3px;
+    .gameingtd {
+      font-size: 14px;
+    }
+  }
 }
 label {
   color: white;
@@ -350,13 +357,38 @@ label {
 }
 
 .gameingtd {
-  width: 25%;
+  background-color: #462766;
+  border-radius: 10px;
+  // width: 25%;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
-.tablinkgame.active {
+.btn-active {
   border: 1px solid #ffffff;
   box-shadow: 0 0 3px 1px #ffffff;
   background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+}
+.iningridgame {
+  background: linear-gradient(170deg, #874fd2 0%,#3d1193 100%);
+  border-radius: 10px;
+  padding: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.bg-back {
+  background: linear-gradient(155deg, #c684ff82, #6500ff73);
+  max-width: 500px; 
+  border-radius: 5px;
+  margin: 5px auto;
+  box-shadow: 0 0 0 3px #ae51ff;
+  color: white;
+}
+.headeraccount {
+  padding: 9px 0;
+}
+.trofaccount {
+  border-bottom: 1px solid #a760fc;
+  font-weight: bold;
+  color: white;
 }

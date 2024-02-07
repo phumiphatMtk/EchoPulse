@@ -33,12 +33,10 @@ const Record = () => {
   ];
 
   return (
-    <div className="tabcontent">
       <div className="headerprocess">
         <h1 className="text-center text-3xl my-3">
           <i className="fa-solid fa-clock-rotate-left checkbtn"></i>ถอนเงิน
         </h1>
-      </div>
       <div className="containprocess mt-5">
         <table className="w-full">
           <thead className="text-center">

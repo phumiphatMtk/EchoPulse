@@ -36,7 +36,6 @@ const Deposit = () => {
   ];
 
   return (
-    <div className="tabcontent">
       <div className="headerprocess">
         <h1 className="text-center text-3xl my-3"> <i class="fa-solid fa-check checkbtn"></i> ฝากเงิน</h1>
         <div className="accordion-div">
@@ -70,7 +69,6 @@ const Deposit = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
