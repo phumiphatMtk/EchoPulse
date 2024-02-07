@@ -348,3 +348,15 @@ label {
     background: #b65eff;
   }
 }
+
+.gameingtd {
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+}
+.tablinkgame.active {
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 3px 1px #ffffff;
+  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+}
