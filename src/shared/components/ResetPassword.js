@@ -26,7 +26,7 @@ const ResetPassword = () => {
   return (
     <div className="headerprocess">
       <h1 className="text-center text-3xl mt-3">
-        <i class="fa-solid fa-lock gtnbtn"></i>เปลี่ยนรหัสผ่าน
+        <i className="fa-solid fa-lock gtnbtn"></i>เปลี่ยนรหัสผ่าน
       </h1>
       <form onSubmit={handleSubmit}>
         <div className="relative mt-3">

@@ -223,6 +223,14 @@ label {
   border-radius: 10px;
 }
 
+.game-list {
+  height: 350px;
+  overflow-x: scroll;
+  img {
+    width: 60px;
+  }
+}
+
 @media (max-width: 576px) {
   .wordanimation {
     display: none;
@@ -240,11 +248,10 @@ label {
   }
   .spanofbankhis-td {
     font-size: 14px;
-}
-.moneyhisdps {
-  font-size: 14px;
-
-}
+  }
+  .moneyhisdps {
+    font-size: 14px;
+  }
 
   .promotion-swiper {
     .slider-controler {
@@ -266,7 +273,6 @@ label {
     .swiper-pagination .swiper-pagination-bullet-active {
       background: #6a59ff;
     }
-    
   }
   .tabcontent {
     padding-left: 3px;
@@ -278,9 +284,9 @@ label {
 }
 label {
   color: white;
-    background: #7c30a1;
-    padding: 2px 15px;
-    border-radius: 10px;
+  background: #7c30a1;
+  padding: 2px 15px;
+  border-radius: 10px;
 }
 
 .headdeposit {
@@ -295,26 +301,31 @@ label {
   box-shadow: 0 0 0 2px #daaaff;
 }
 .headdeposit button {
-  background: linear-gradient(180deg,#d091ff,#9240d1);
+  background: linear-gradient(180deg, #d091ff, #9240d1);
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 17px;
   padding: 10px 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
 .headwithdraw button {
-  background: linear-gradient(180deg,#f27f7f,#b30000);
+  background: linear-gradient(180deg, #f27f7f, #b30000);
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 17px;
   padding: 10px 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .historyofdps {
-  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #ddb0ff 0,
+    #b047ff 44%,
+    #652895 100%
+  );
   border-radius: 10px;
   padding: 6px;
   margin-top: 13px;
@@ -366,11 +377,16 @@ label {
 .btn-active {
   border: 1px solid #ffffff;
   box-shadow: 0 0 3px 1px #ffffff;
-  background: radial-gradient(100% 100% at 50% 0,#ddb0ff 0,#b047ff 44%,#652895 100%);
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #ddb0ff 0,
+    #b047ff 44%,
+    #652895 100%
+  );
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 .iningridgame {
-  background: linear-gradient(170deg, #874fd2 0%,#3d1193 100%);
+  background: linear-gradient(170deg, #874fd2 0%, #3d1193 100%);
   border-radius: 10px;
   padding: 10px;
   white-space: nowrap;
@@ -378,7 +394,7 @@ label {
 }
 .bg-back {
   background: linear-gradient(155deg, #c684ff82, #6500ff73);
-  max-width: 500px; 
+  max-width: 500px;
   border-radius: 5px;
   margin: 5px auto;
   box-shadow: 0 0 0 3px #ae51ff;

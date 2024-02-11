@@ -60,10 +60,10 @@ const Promotion = () => {
         ))}
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
-            <i class="fa-solid fa-chevron-left"></i>
+            <i className="fa-solid fa-chevron-left"></i>
           </div>
           <div className="swiper-button-next slider-arrow">
-            <i class="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-right"></i>
           </div>
         </div>
       </Swiper>

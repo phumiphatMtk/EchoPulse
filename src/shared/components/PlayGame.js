@@ -1,42 +1,72 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { postService } from "../services";
+import Image from "next/image";
 
 const PlayGame = () => {
-  const [gamesList, setGameList] = useState(["sexy", "sa game", "wm"]);
   const [activeButton, setActiveButton] = useState("casino");
-  const handleTab = (code) => {
-    setGameList([]);
-    let list = [];
-    switch (code) {
-      case "casino":
-        list = ["sexy", "sa game", "wm"]; // api
-        setGameList(list);
-        break;
-      case "slot":
-        list = ["JDB", "JOKER", "PG"];
-        setGameList(list);
-        break;
-      case "game":
-        list = ["ป๊อก", "Joker finish ", "KingMaker"];
-        setGameList(list);
-        break;
-      case "lotto":
-        list = ["lotto"];
-        setGameList(list);
-        break;
-      default:
-        list = ["sexy", "sa game", "wm"];
-        setGameList(list);
-        break;
+  const [casinoList, setCasinoList] = useState([]);
+  const [slotList, setSlotList] = useState([]);
+  const [lottoList, setLottoList] = useState([]);
+  const [gamesList, setGameList] = useState([]);
+
+  useEffect(() => {
+    getGames();
+  }, []);
+
+  const getGames = async () => {
+    const payload = {
+      method: "provider_list",
+    };
+    const { promise } = postService("", payload);
+    const { success, data } = await promise;
+    if (success && data.length > 0) {
+      data.forEach(async (ele) => {
+        if (ele.type == "slot") {
+          const payloadSlot = {
+            method: "game_list",
+            provider_code: ele.code,
+          };
+
+          const { promise: promiseSlot } = postService("", payloadSlot);
+          const { success: succesSlot, data: slotData } = await promiseSlot;
+          if ((succesSlot, slotData.length > 0)) {
+            slotData.forEach((slot) => {
+              slot.provider_code = ele.code;
+            });
+            setSlotList((prev) => [...prev, ...slotData]);
+          }
+        }
+      });
     }
+  };
+
+  const handleTab = (code) => {
     setActiveButton(code);
+  };
+
+  const lunchGame = async (providercode, gamecode) => {
+    const payload = {
+      method: "game_launch",
+      user_code: "test",
+      provider_code: providercode,
+      game_code: gamecode,
+      lang: "en",
+    };
+
+    const { promise } = postService("", payload);
+    const { success, data } = await promise;
+    if (success && data) {
+      window.open(data.launch_url, "_blank");
+    }
   };
 
   return (
     <div className="headerprocess">
       <h1 className="text-center text-3xl my-3">
         <i className="fa-solid fa-gamepad checkbtn"></i>เข้าเล่นเกม
+        {process.env.NEXT_PUBLIC_AGENT_CDOE}
       </h1>
       <div className="tabcontent px-5 mt-5">
         <div className="flex flex-row items-center justify-center w-full space-x-2">
@@ -78,12 +108,22 @@ const PlayGame = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-2">
-          {gamesList.map((game) => (
-            <div className="iningridgame w-full text-center" key={game}>
-              {game}
-            </div>
-          ))}
+        <div className="grid grid-cols-3 gap-2 game-list">
+          {activeButton == "slot" &&
+            slotList.map((game) => (
+              <div
+                className="iningridgame w-full text-center"
+                key={game.game_code}
+                onClick={() => lunchGame(game.provider_code, game.game_code)}
+              >
+                <div className="flex flex-col items-center justify-center">
+                  <div className="mb-3">
+                    <img src={game.banner} alt={game.game_name} />
+                  </div>
+                  <div>{game.game_name}</div>
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </div>

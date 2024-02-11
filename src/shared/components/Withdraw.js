@@ -6,12 +6,12 @@ const Withdraw = () => {
   return (
     <div className="headerprocess">
       <h1 className="text-center text-3xl my-3">
-        <i class="fa-solid fa-check checkbtn"></i>ถอนเงิน
+        <i className="fa-solid fa-check checkbtn"></i>ถอนเงิน
       </h1>
 
       <div className="bgback">
-        <div class="flex justify-between">
-          <div class=" text-black">
+        <div className="flex justify-between">
+          <div className=" text-black">
             <span className="font-semibold text-lg">
               ถอนเงินเข้าบัญชีธนาคาร
             </span>
@@ -19,7 +19,7 @@ const Withdraw = () => {
             <p> เลขที่บัญชี : 861-2160-462</p>
             <p> ธนาคารกสิกรไทย</p>
           </div>
-          <div class="flex justify-items-center">
+          <div className="flex justify-items-center">
             {/* <span>02</span> */}
             <Image
               className=""
@@ -32,12 +32,12 @@ const Withdraw = () => {
         </div>
       </div>
       <div className="wdsec02">
-        <div class="flex justify-between">
-          <div class=" text-white">
+        <div className="flex justify-between">
+          <div className=" text-white">
             <span className="font-semibold text-lg">จำนวนเงินที่ถอนได้</span>
             <p className="text-base"> ฿ 0.00</p>
           </div>
-          <div class="text-white">
+          <div className="text-white">
             <span className="font-semibold text-lg">ยอดถอนขั้นต่ำ</span>
             <p className="text-base"> ฿ 300.00</p>
           </div>
